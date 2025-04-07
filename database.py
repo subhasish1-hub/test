@@ -7,9 +7,7 @@ from dotenv import load_dotenv  # ✅ Load env variables
 # ✅ Load environment variables from .env file
 load_dotenv(".env")
 
-# Override DATABASE_URL if it is set to the local database
-# if os.getenv("DATABASE_URL") == "postgresql://postgres:Iita202601@localhost:5432/fastapi_db":
-#     os.environ["DATABASE_URL"] = "postgresql://avnadmin:AVNS_ONx9vmBRGhXjUyLaJSU@pg-3240166f-food-recommendation.i.aivencloud.com:17426/defaultdb?sslmode=require"
+
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 print(f"Using DATABASE_URL: {DATABASE_URL}")
